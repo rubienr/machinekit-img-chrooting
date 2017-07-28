@@ -9,6 +9,26 @@ In order to get started the scripts must be run in alphabetical order:
 * ...
 * 0N-nnn
 
+General Workflow
+================
+1. Usually one runs script **01-download-image.sh** or downloads the image manually to this folder.
+
+1. Since we mostly use the downloaded ARM image on non ARM host systems we need to make sure the correct emulator is used. 
+For this reason make **qemu-arm-static** has to be installed before **sudo 02-set-binfmt.sh** can be used. 
+````
+sudo apt-get install qemu-user-static
+```` 
+1. Before processing, the image must be mounted correctly, thus run **sudo 03-mount-root.sh** **sudo 04-mount-sys.sh**
+
+1. Chroot to the root directory and do your work:
+
+````
+chroot ./root /bin/bash
+````
+
+1. Cleanup after finishing work: **sudo 05-umount-all.sh**
+
+
 Scripts
 =======
 * 01-download-image.sh
