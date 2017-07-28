@@ -1,0 +1,6 @@
+THe offset to mount the image from corresponds to the partition's block size times partition start.
+
+partition infos: fdisk -l image.img
+
+512 * 8192 = 4194304
+
