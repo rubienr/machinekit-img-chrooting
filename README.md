@@ -18,10 +18,10 @@ For this reason make **qemu-arm-static** has to be installed before **sudo 02-se
 ````
 sudo apt-get install qemu-user-static
 ```` 
-1. Before processing, the image must be mounted correctly, thus run **sudo 03-mount-root.sh** **sudo 04-mount-sys.sh**
+
+1. Before processing, the image must be mounted correctly, thus run **sudo 03-mount-root.sh** and **sudo 04-mount-sys.sh**
 
 1. Chroot to the root directory and do your work:
-
 ````
 chroot ./root /bin/bash
 ````
