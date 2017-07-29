@@ -19,11 +19,18 @@ For this reason make **qemu-arm-static** has to be installed before **sudo 02-se
         sudo apt-get install qemu-user-static
         ```` 
 
-1. Before processing, the image must be mounted correctly, thus run **sudo 03-mount-root.sh** and **sudo 04-mount-sys.sh**
+1. Before processing, the image must be mounted correctly, thus run **sudo 03-mount-root.sh** and **sudo 04-mount-sys.sh**. Also copy the **qemu-arm-static** to the changeroot:
+
+        ````
+        sudo cp /usr/bin/qemu-arm-static ./root/usr/bin/
+        ````
+
 
 1. Chroot to the root directory and do your work:
         ````
-        chroot ./root /bin/bash
+        sudo chroot ./root /bin/bash
+        root@yourpc:/# su - machinekit
+        machinekit@yourpc:/$ 
         ````
 
 1. Cleanup after finishing work: **sudo 05-umount-all.sh**
