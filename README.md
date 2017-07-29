@@ -61,6 +61,8 @@ Cleanup script.
 
 Further Informations
 ====================
+
+*[Creating a Machinekit Debian Image](https://github.com/machinekoder/asciidoc-sandbox/wiki/Creating-a-Machinekit-Debian-Image)
 * [Machinekit development setup guide](http://www.machinekit.io/docs/developing/machinekit-developing/#install-development-packages)
 
 * [Cross Compilation for ARM guide](https://community.arm.com/iot/embedded/b/embedded-blog/posts/cross-compilation-for-arm)
