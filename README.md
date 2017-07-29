@@ -66,6 +66,8 @@ Further Informations
 
 * [Machinekit development setup guide](http://www.machinekit.io/docs/developing/machinekit-developing/#install-development-packages)
 
+* [BBB Overlays](https://github.com/beagleboard/bb.org-overlays)
+
 * [Cross Compilation for ARM guide](https://community.arm.com/iot/embedded/b/embedded-blog/posts/cross-compilation-for-arm)
 
 * [BBB Debian images](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian#BBW.2FBBB_.28All_Revs.29_Machinekit)
